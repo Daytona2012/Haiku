@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"  />
+  <Title>A Daily Haiku</Title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+  var haikus= new Array();
+
+  haikus[0] = new Image();
+  haikus[0].src = 'img/1ny4t7.jpg';
+
+  haikus[1] = new Image();
+  haikus[1].src = 'img/Boba_may4.jpg';
+
+  haikus[2] = new Image();
+  haikus[2].src = 'img/Cheers.jpg';
+
+  haikus[3] = new Image();
+  haikus[3].src = 'img/headbutts.jpg';
+
+  haikus[4] = new Image();
+  haikus[4].src = 'img/JCcrvsev.jpg';
+
+  haikus[5] = new Image();
+  haikus[5].src = 'img/Luke.jpg';
+
+  haikus[6] = new Image();
+  haikus[6].src = 'img/SKcrvsev.jpg';
+
+  haikus[7] = new Image();
+  haikus[7].src = 'img/Soccer.jpg';
+
+  haikus[8] = new Image();
+  haikus[8].src = 'img/Star wars.jpg';
+
+  haikus[9] = new Image();
+  haikus[9].src = 'img/Vader.jpg';
+
+  haikus[10] = new Image();
+  haikus[10].src = 'img/Yoda.jpg';
+
+  var i = haikus.length;
+  var daykus = Math.round(Math.random() * (i-1));
+
+  function showkus() {document.body.appendChild(haikus[daykus]);}
+
+  document.write("<h3>Your Haiku</h3>");
+  document.write("<hr />");
+
+  showkus();
+
+  </script>
+</body>
+
+</html>
